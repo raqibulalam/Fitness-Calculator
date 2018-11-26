@@ -29,6 +29,11 @@ public class exercise extends JFrame {
 	 * Create the frame.
 	 */
 	public exercise() {
+		design();
+	}
+	
+	private void design()
+	{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1122, 763);
 		contentPane = new JPanel();
