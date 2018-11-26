@@ -112,6 +112,13 @@ public class Mainpage extends JFrame {
 		contentPane.add(btnAddBloodPressure);
 		
 		JButton btnMeasureYourExcercise = new JButton("Measure your Excercise");
+		btnMeasureYourExcercise.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				exercise ex=new exercise();
+				ex.setVisible(true);
+				dispose();
+			}
+		});
 		btnMeasureYourExcercise.setIcon(new ImageIcon(Mainpage.class.getResource("/images/karate-punch-icon.png")));
 		btnMeasureYourExcercise.setBounds(164, 656, 286, 55);
 		contentPane.add(btnMeasureYourExcercise);
